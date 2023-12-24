@@ -1,0 +1,129 @@
+@font-face {
+  font-family: "WorkSans";
+  src: url("./assets/fonts/WorkSans-VariableFont_wght.ttf");
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  position: relative;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "WorkSans", sans-serif;
+  font-size: 16px;
+  background-color: hsl(275, 100%, 97%);
+}
+
+hr {
+  width: 100%;
+  border-color: hsla(292, 16%, 49%, 0.1);
+}
+
+#backround-pattern {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: -999;
+  width: 100%;
+}
+
+#card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0 1px 3px 0 hsl(292, 16%, 49%);
+}
+
+#content {
+  display: flex;
+  flex-direction: column;
+  padding: 0 20px 20px 20px;
+  width: 600px;
+}
+
+#title {
+  display: flex;
+  align-items: center;
+  font-size: 3rem;
+  font-weight: 700;
+  gap: 15px;
+  padding: 30px 0px;
+}
+
+#title-text {
+  font-size: 2rem;
+}
+
+#title-logo {
+  width: 40px;
+  height: 40px;
+}
+
+.qa-content {
+  list-style: none;
+}
+
+.clickable {
+  display: flex;
+  justify-content: space-between;
+}
+
+.cursor {
+  cursor: pointer;
+}
+
+.question:hover {
+  color: #ad28eb;
+}
+
+.bold-text {
+  font-weight: 600;
+}
+
+.no-margin {
+  margin: 0;
+}
+
+.grey-text {
+  color: hsl(292, 16%, 49%);
+}
+
+.hidden {
+  display: none;
+}
+
+.colored-text {
+  color: #ad28eb;
+}
+
+.normal-text {
+  font-size: medium;
+}
+
+@media only screen and (max-width: 376px) {
+  #card {
+    width: 75%;
+  }
+
+  #content {
+    width: 90%;
+  }
+
+  #title-logo {
+    width: 30px;
+    height: 30px;
+  }
+
+  #backround-pattern {
+    position: fixed;
+    display: inline-block;
+    overflow: hidden;
+    width: auto;
+  }
+}
